@@ -1,0 +1,30 @@
+<html>
+<!--
+ASCIIMatic Drawing
+Copyright (c) Lou Franco. All rights reserved.
+
+  The use and distribution terms for this software are covered by the
+  Common Public License 1.0 (http://opensource.org/licenses/cpl.php)
+  Current source can be found here: https://github.com/loufranco/asciimatic-scripts
+  By using this software in any fashion, you are agreeing to be bound by
+  the terms of this license.
+
+You must not remove this notice, or any other, from this software.
+-->
+<head>
+<script src="asciimatic-drawing.js"></script>
+</head>
+<body>
+<div id="drawing"></div>
+<script type="text/javascript">
+var screen = new AsciiScreen();
+screen.drawLine(0,0, 10, 10);
+screen.fillRect(12,2, 6,6,'*');
+screen.drawHLine(20,5,10);
+screen.drawVLine(30,10,5);
+screen.drawRect(37,5,5,5);
+screen.drawHString(37,12,"Hello");
+screen.paintOnto(document.getElementById('drawing'));
+</script>
+</body>
+</html>
